@@ -1,0 +1,8 @@
+#!/bin/bash
+cd ~/mcsim
+cd McSim 
+make INCS=-I/home/lorabit/mcsim/pin/extras/xed2-intel64/include -j 8 >> compiles.log
+cd ../Pthread
+make TOOLS_DIR=/home/lorabit/mcsim/pin/source/tools -j 8 >>compiles.log
+cd ..
+McSim/mcsim -mdfile ./Apps/md/md-o3-closed.py -runfile ./Apps/list/remote.py
