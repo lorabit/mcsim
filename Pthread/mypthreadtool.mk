@@ -23,15 +23,15 @@ PIN_LDFLAGS    = $(DBG)
 TARGET_LONG=intel64
 PIN_KIT ?= ../../..
 
-XEDKIT        = $(PIN_KIT)/extras/xed
+XEDKIT        = $(PIN_KIT)/extras/xed2017
 #XEDKIT        = $(PIN_KIT)/extras/xed2-$(TARGET_LONG)
-PIN_LPATHS   += -L$(XEDKIT)/lib -L$(PIN_KIT)/$(TARGET_LONG)/lib -L$(PIN_KIT)/$(TARGET_LONG)/lib-ext
-PIN_CXXFLAGS += -I$(XEDKIT)/obj -I$(PIN_KIT)/extras/components/include \
+PIN_LPATHS   += -L$(XEDKIT)/obj -L$(PIN_KIT)/$(TARGET_LONG)/lib -L$(PIN_KIT)/$(TARGET_LONG)/lib-ext
+PIN_CXXFLAGS += -I$(XEDKIT)/obj -I$(XEDIT)/include/public/xed/ -I$(PIN_KIT)/extras/components/include \
                 -I$(PIN_KIT)/source/include/pin -I$(PIN_KIT)/source/include/pin/gen
 VSCRIPT_DIR = $(PIN_KIT)/source/include/pin
 
 PIN_BASE_LIBS := 
-PIN_BASE_LIBS += -lxed
+#PIN_BASE_LIBS += -lxed
 PIN_BASE_LIBS += -ldwarf -lelf ${PIN_DYNAMIC}
 
 PIN_CXXFLAGS += -DTARGET_IA32E -DHOST_IA32E
@@ -56,12 +56,12 @@ else
   OPT = -O3 -g
 endif
 
-CXXFLAGS_COMMON = -Wno-unknown-pragmas $(DBG) $(OPT) 
+CXXFLAGS_COMMON = -fPIC -Wno-unknown-pragmas $(DBG) $(OPT) 
 #CXX = g++ -m32
 #CC  = gcc -m32
 CXX = g++
 CC  = gcc
-PINFLAGS = 
+PINFLAGS = -fPIC
 
 SRCS_COMMON  = PthreadUtil.cc \
 	PthreadAttr.cc \
@@ -79,15 +79,15 @@ SRCS_COMMON  = PthreadUtil.cc \
 
 ifneq ($(EXTENGINELIB),)
   SRCS = $(SRCS_COMMON) EEPthreadSim.cc EEPthreadScheduler.cc PTS.cc
-  CXXFLAGS = $(CXXFLAGS_COMMON) -DEXTENGINE
+  CXXFLAGS = -fPIC $(CXXFLAGS_COMMON) -DEXTENGINE
 else
   SRCS = $(SRCS_COMMON) PthreadSim.cc PthreadScheduler.cc
-  CXXFLAGS = $(CXXFLAGS_COMMON)
+  CXXFLAGS = -fPIC $(CXXFLAGS_COMMON)
 endif
 
 OBJS = $(patsubst %.cc,obj_$(TAG)/%.o,$(SRCS))
-MYPIN_CXXFLAGS = $(subst -I../,-I$(TOOLS_DIR)/,$(PIN_CXXFLAGS))
-MYPIN_LDFLAGS  = $(subst -L../,-L$(TOOLS_DIR)/,$(PIN_LDFLAGS))
+MYPIN_CXXFLAGS =-fPIC  $(subst -I../,-I$(TOOLS_DIR)/,$(PIN_CXXFLAGS))
+MYPIN_LDFLAGS  = -fPIC $(subst -L../,-L$(TOOLS_DIR)/,$(PIN_LDFLAGS))
 
 all: obj_$(TAG)/mypthreadtool obj_$(TAG)/libmypthread.a
 	cp -f obj_$(TAG)/mypthreadtool mypthreadtool
