@@ -70,3 +70,125 @@ make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
 cp -f obj_opt/mypthreadtool mypthreadtool
 cp -f obj_opt/libmypthread.a libmypthread.a
 make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+g++ -c -Wno-unknown-pragmas -DNDEBUG -O3 -g  -DEXTENGINE -DBIGARRAY_MULTIPLIER=1 -DUSING_XED -DNDEBUG -fno-strict-aliasing -I/home/lorabit/mcsim/pin/source/tools/Include -I/home/lorabit/mcsim/pin/source/tools/InstLib -I/home/lorabit/mcsim/pin/source/tools/../../extras/xed2-intel64/include -I/home/lorabit/mcsim/pin/source/tools/../../extras/components/include -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin/gen -DTARGET_IA32E -DHOST_IA32E -fPIC -DTARGET_LINUX -O3 -g -I/usr/local/include -o obj_opt/mypthreadtool.o mypthreadtool.cc
+g++ obj_opt/PthreadUtil.o obj_opt/PthreadAttr.o obj_opt/PthreadOnce.o obj_opt/PthreadKey.o obj_opt/PthreadMutexAttr.o obj_opt/PthreadMutex.o obj_opt/PthreadBarrier.o obj_opt/PthreadCondAttr.o obj_opt/PthreadCond.o obj_opt/PthreadCleanup.o obj_opt/PthreadCancel.o obj_opt/PthreadJoin.o obj_opt/PthreadMalloc.o obj_opt/EEPthreadSim.o obj_opt/EEPthreadScheduler.o obj_opt/PTS.o obj_opt/mypthreadtool.o -DNDEBUG -shared -Wl,-Bsymbolic -Wl,--version-script=../../../source/include/pin/pintool.ver -L/home/lorabit/mcsim/pin/source/tools/Lib/ -L/home/lorabit/mcsim/pin/source/tools/ExtLib/ -L/home/lorabit/mcsim/pin/source/tools/../../extras/xed2-intel64/lib -L/home/lorabit/mcsim/pin/source/tools/../../intel64/lib -L/home/lorabit/mcsim/pin/source/tools/../../intel64/lib-ext -o obj_opt/mypthreadtool -lpin  -lxed -ldwarf -lelf -ldl  -L/usr/local/lib -lsnappy -pthread
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+g++ -c -Wno-unknown-pragmas -DNDEBUG -O3 -g  -DEXTENGINE -DBIGARRAY_MULTIPLIER=1 -DUSING_XED -DNDEBUG -fno-strict-aliasing -I/home/lorabit/mcsim/pin/source/tools/Include -I/home/lorabit/mcsim/pin/source/tools/InstLib -I/home/lorabit/mcsim/pin/source/tools/../../extras/xed2-intel64/include -I/home/lorabit/mcsim/pin/source/tools/../../extras/components/include -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin/gen -DTARGET_IA32E -DHOST_IA32E -fPIC -DTARGET_LINUX -O3 -g -I/usr/local/include -o obj_opt/mypthreadtool.o mypthreadtool.cc
+g++ obj_opt/PthreadUtil.o obj_opt/PthreadAttr.o obj_opt/PthreadOnce.o obj_opt/PthreadKey.o obj_opt/PthreadMutexAttr.o obj_opt/PthreadMutex.o obj_opt/PthreadBarrier.o obj_opt/PthreadCondAttr.o obj_opt/PthreadCond.o obj_opt/PthreadCleanup.o obj_opt/PthreadCancel.o obj_opt/PthreadJoin.o obj_opt/PthreadMalloc.o obj_opt/EEPthreadSim.o obj_opt/EEPthreadScheduler.o obj_opt/PTS.o obj_opt/mypthreadtool.o -DNDEBUG -shared -Wl,-Bsymbolic -Wl,--version-script=../../../source/include/pin/pintool.ver -L/home/lorabit/mcsim/pin/source/tools/Lib/ -L/home/lorabit/mcsim/pin/source/tools/ExtLib/ -L/home/lorabit/mcsim/pin/source/tools/../../extras/xed2-intel64/lib -L/home/lorabit/mcsim/pin/source/tools/../../intel64/lib -L/home/lorabit/mcsim/pin/source/tools/../../intel64/lib-ext -o obj_opt/mypthreadtool -lpin  -lxed -ldwarf -lelf -ldl  -L/usr/local/lib -lsnappy -pthread
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+g++ -c -Wno-unknown-pragmas -DNDEBUG -O3 -g  -DEXTENGINE -DBIGARRAY_MULTIPLIER=1 -DUSING_XED -DNDEBUG -fno-strict-aliasing -I/home/lorabit/mcsim/pin/source/tools/Include -I/home/lorabit/mcsim/pin/source/tools/InstLib -I/home/lorabit/mcsim/pin/source/tools/../../extras/xed2-intel64/include -I/home/lorabit/mcsim/pin/source/tools/../../extras/components/include -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin/gen -DTARGET_IA32E -DHOST_IA32E -fPIC -DTARGET_LINUX -O3 -g -I/usr/local/include -o obj_opt/mypthreadtool.o mypthreadtool.cc
+g++ obj_opt/PthreadUtil.o obj_opt/PthreadAttr.o obj_opt/PthreadOnce.o obj_opt/PthreadKey.o obj_opt/PthreadMutexAttr.o obj_opt/PthreadMutex.o obj_opt/PthreadBarrier.o obj_opt/PthreadCondAttr.o obj_opt/PthreadCond.o obj_opt/PthreadCleanup.o obj_opt/PthreadCancel.o obj_opt/PthreadJoin.o obj_opt/PthreadMalloc.o obj_opt/EEPthreadSim.o obj_opt/EEPthreadScheduler.o obj_opt/PTS.o obj_opt/mypthreadtool.o -DNDEBUG -shared -Wl,-Bsymbolic -Wl,--version-script=../../../source/include/pin/pintool.ver -L/home/lorabit/mcsim/pin/source/tools/Lib/ -L/home/lorabit/mcsim/pin/source/tools/ExtLib/ -L/home/lorabit/mcsim/pin/source/tools/../../extras/xed2-intel64/lib -L/home/lorabit/mcsim/pin/source/tools/../../intel64/lib -L/home/lorabit/mcsim/pin/source/tools/../../intel64/lib-ext -o obj_opt/mypthreadtool -lpin  -lxed -ldwarf -lelf -ldl  -L/usr/local/lib -lsnappy -pthread
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+g++ -c -Wno-unknown-pragmas -DNDEBUG -O3 -g  -DEXTENGINE -DBIGARRAY_MULTIPLIER=1 -DUSING_XED -DNDEBUG -fno-strict-aliasing -I/home/lorabit/mcsim/pin/source/tools/Include -I/home/lorabit/mcsim/pin/source/tools/InstLib -I/home/lorabit/mcsim/pin/source/tools/../../extras/xed2-intel64/include -I/home/lorabit/mcsim/pin/source/tools/../../extras/components/include -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin/gen -DTARGET_IA32E -DHOST_IA32E -fPIC -DTARGET_LINUX -O3 -g -I/usr/local/include -o obj_opt/mypthreadtool.o mypthreadtool.cc
+g++ obj_opt/PthreadUtil.o obj_opt/PthreadAttr.o obj_opt/PthreadOnce.o obj_opt/PthreadKey.o obj_opt/PthreadMutexAttr.o obj_opt/PthreadMutex.o obj_opt/PthreadBarrier.o obj_opt/PthreadCondAttr.o obj_opt/PthreadCond.o obj_opt/PthreadCleanup.o obj_opt/PthreadCancel.o obj_opt/PthreadJoin.o obj_opt/PthreadMalloc.o obj_opt/EEPthreadSim.o obj_opt/EEPthreadScheduler.o obj_opt/PTS.o obj_opt/mypthreadtool.o -DNDEBUG -shared -Wl,-Bsymbolic -Wl,--version-script=../../../source/include/pin/pintool.ver -L/home/lorabit/mcsim/pin/source/tools/Lib/ -L/home/lorabit/mcsim/pin/source/tools/ExtLib/ -L/home/lorabit/mcsim/pin/source/tools/../../extras/xed2-intel64/lib -L/home/lorabit/mcsim/pin/source/tools/../../intel64/lib -L/home/lorabit/mcsim/pin/source/tools/../../intel64/lib-ext -o obj_opt/mypthreadtool -lpin  -lxed -ldwarf -lelf -ldl  -L/usr/local/lib -lsnappy -pthread
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+g++ -c -Wno-unknown-pragmas -DNDEBUG -O3 -g  -DEXTENGINE -DBIGARRAY_MULTIPLIER=1 -DUSING_XED -DNDEBUG -fno-strict-aliasing -I/home/lorabit/mcsim/pin/source/tools/Include -I/home/lorabit/mcsim/pin/source/tools/InstLib -I/home/lorabit/mcsim/pin/source/tools/../../extras/xed2-intel64/include -I/home/lorabit/mcsim/pin/source/tools/../../extras/components/include -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin/gen -DTARGET_IA32E -DHOST_IA32E -fPIC -DTARGET_LINUX -O3 -g -I/usr/local/include -o obj_opt/mypthreadtool.o mypthreadtool.cc
+g++ obj_opt/PthreadUtil.o obj_opt/PthreadAttr.o obj_opt/PthreadOnce.o obj_opt/PthreadKey.o obj_opt/PthreadMutexAttr.o obj_opt/PthreadMutex.o obj_opt/PthreadBarrier.o obj_opt/PthreadCondAttr.o obj_opt/PthreadCond.o obj_opt/PthreadCleanup.o obj_opt/PthreadCancel.o obj_opt/PthreadJoin.o obj_opt/PthreadMalloc.o obj_opt/EEPthreadSim.o obj_opt/EEPthreadScheduler.o obj_opt/PTS.o obj_opt/mypthreadtool.o -DNDEBUG -shared -Wl,-Bsymbolic -Wl,--version-script=../../../source/include/pin/pintool.ver -L/home/lorabit/mcsim/pin/source/tools/Lib/ -L/home/lorabit/mcsim/pin/source/tools/ExtLib/ -L/home/lorabit/mcsim/pin/source/tools/../../extras/xed2-intel64/lib -L/home/lorabit/mcsim/pin/source/tools/../../intel64/lib -L/home/lorabit/mcsim/pin/source/tools/../../intel64/lib-ext -o obj_opt/mypthreadtool -lpin  -lxed -ldwarf -lelf -ldl  -L/usr/local/lib -lsnappy -pthread
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+g++ -c -Wno-unknown-pragmas -DNDEBUG -O3 -g  -DEXTENGINE -DBIGARRAY_MULTIPLIER=1 -DUSING_XED -DNDEBUG -fno-strict-aliasing -I/home/lorabit/mcsim/pin/source/tools/Include -I/home/lorabit/mcsim/pin/source/tools/InstLib -I/home/lorabit/mcsim/pin/source/tools/../../extras/xed2-intel64/include -I/home/lorabit/mcsim/pin/source/tools/../../extras/components/include -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin/gen -DTARGET_IA32E -DHOST_IA32E -fPIC -DTARGET_LINUX -O3 -g -I/usr/local/include -o obj_opt/mypthreadtool.o mypthreadtool.cc
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+g++ -c -Wno-unknown-pragmas -DNDEBUG -O3 -g  -DEXTENGINE -DBIGARRAY_MULTIPLIER=1 -DUSING_XED -DNDEBUG -fno-strict-aliasing -I/home/lorabit/mcsim/pin/source/tools/Include -I/home/lorabit/mcsim/pin/source/tools/InstLib -I/home/lorabit/mcsim/pin/source/tools/../../extras/xed2-intel64/include -I/home/lorabit/mcsim/pin/source/tools/../../extras/components/include -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin/gen -DTARGET_IA32E -DHOST_IA32E -fPIC -DTARGET_LINUX -O3 -g -I/usr/local/include -o obj_opt/mypthreadtool.o mypthreadtool.cc
+g++ obj_opt/PthreadUtil.o obj_opt/PthreadAttr.o obj_opt/PthreadOnce.o obj_opt/PthreadKey.o obj_opt/PthreadMutexAttr.o obj_opt/PthreadMutex.o obj_opt/PthreadBarrier.o obj_opt/PthreadCondAttr.o obj_opt/PthreadCond.o obj_opt/PthreadCleanup.o obj_opt/PthreadCancel.o obj_opt/PthreadJoin.o obj_opt/PthreadMalloc.o obj_opt/EEPthreadSim.o obj_opt/EEPthreadScheduler.o obj_opt/PTS.o obj_opt/mypthreadtool.o -DNDEBUG -shared -Wl,-Bsymbolic -Wl,--version-script=../../../source/include/pin/pintool.ver -L/home/lorabit/mcsim/pin/source/tools/Lib/ -L/home/lorabit/mcsim/pin/source/tools/ExtLib/ -L/home/lorabit/mcsim/pin/source/tools/../../extras/xed2-intel64/lib -L/home/lorabit/mcsim/pin/source/tools/../../intel64/lib -L/home/lorabit/mcsim/pin/source/tools/../../intel64/lib-ext -o obj_opt/mypthreadtool -lpin  -lxed -ldwarf -lelf -ldl  -L/usr/local/lib -lsnappy -pthread
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+g++ -c -Wno-unknown-pragmas -DNDEBUG -O3 -g  -DEXTENGINE -DBIGARRAY_MULTIPLIER=1 -DUSING_XED -DNDEBUG -fno-strict-aliasing -I/home/lorabit/mcsim/pin/source/tools/Include -I/home/lorabit/mcsim/pin/source/tools/InstLib -I/home/lorabit/mcsim/pin/source/tools/../../extras/xed2-intel64/include -I/home/lorabit/mcsim/pin/source/tools/../../extras/components/include -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin/gen -DTARGET_IA32E -DHOST_IA32E -fPIC -DTARGET_LINUX -O3 -g -I/usr/local/include -o obj_opt/mypthreadtool.o mypthreadtool.cc
+g++ obj_opt/PthreadUtil.o obj_opt/PthreadAttr.o obj_opt/PthreadOnce.o obj_opt/PthreadKey.o obj_opt/PthreadMutexAttr.o obj_opt/PthreadMutex.o obj_opt/PthreadBarrier.o obj_opt/PthreadCondAttr.o obj_opt/PthreadCond.o obj_opt/PthreadCleanup.o obj_opt/PthreadCancel.o obj_opt/PthreadJoin.o obj_opt/PthreadMalloc.o obj_opt/EEPthreadSim.o obj_opt/EEPthreadScheduler.o obj_opt/PTS.o obj_opt/mypthreadtool.o -DNDEBUG -shared -Wl,-Bsymbolic -Wl,--version-script=../../../source/include/pin/pintool.ver -L/home/lorabit/mcsim/pin/source/tools/Lib/ -L/home/lorabit/mcsim/pin/source/tools/ExtLib/ -L/home/lorabit/mcsim/pin/source/tools/../../extras/xed2-intel64/lib -L/home/lorabit/mcsim/pin/source/tools/../../intel64/lib -L/home/lorabit/mcsim/pin/source/tools/../../intel64/lib-ext -o obj_opt/mypthreadtool -lpin  -lxed -ldwarf -lelf -ldl  -L/usr/local/lib -lsnappy -pthread
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+g++ -c -Wno-unknown-pragmas -DNDEBUG -O3 -g  -DEXTENGINE -DBIGARRAY_MULTIPLIER=1 -DUSING_XED -DNDEBUG -fno-strict-aliasing -I/home/lorabit/mcsim/pin/source/tools/Include -I/home/lorabit/mcsim/pin/source/tools/InstLib -I/home/lorabit/mcsim/pin/source/tools/../../extras/xed2-intel64/include -I/home/lorabit/mcsim/pin/source/tools/../../extras/components/include -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin/gen -DTARGET_IA32E -DHOST_IA32E -fPIC -DTARGET_LINUX -O3 -g -I/usr/local/include -o obj_opt/mypthreadtool.o mypthreadtool.cc
+g++ obj_opt/PthreadUtil.o obj_opt/PthreadAttr.o obj_opt/PthreadOnce.o obj_opt/PthreadKey.o obj_opt/PthreadMutexAttr.o obj_opt/PthreadMutex.o obj_opt/PthreadBarrier.o obj_opt/PthreadCondAttr.o obj_opt/PthreadCond.o obj_opt/PthreadCleanup.o obj_opt/PthreadCancel.o obj_opt/PthreadJoin.o obj_opt/PthreadMalloc.o obj_opt/EEPthreadSim.o obj_opt/EEPthreadScheduler.o obj_opt/PTS.o obj_opt/mypthreadtool.o -DNDEBUG -shared -Wl,-Bsymbolic -Wl,--version-script=../../../source/include/pin/pintool.ver -L/home/lorabit/mcsim/pin/source/tools/Lib/ -L/home/lorabit/mcsim/pin/source/tools/ExtLib/ -L/home/lorabit/mcsim/pin/source/tools/../../extras/xed2-intel64/lib -L/home/lorabit/mcsim/pin/source/tools/../../intel64/lib -L/home/lorabit/mcsim/pin/source/tools/../../intel64/lib-ext -o obj_opt/mypthreadtool -lpin  -lxed -ldwarf -lelf -ldl  -L/usr/local/lib -lsnappy -pthread
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+cp -f obj_opt/mypthreadtool mypthreadtool
+cp -f obj_opt/libmypthread.a libmypthread.a
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'
+make[1]: Entering directory `/home/lorabit/mcsim/Pthread'
+g++ -c -Wno-unknown-pragmas -DNDEBUG -O3 -g  -DEXTENGINE -DBIGARRAY_MULTIPLIER=1 -DUSING_XED -DNDEBUG -fno-strict-aliasing -I/home/lorabit/mcsim/pin/source/tools/Include -I/home/lorabit/mcsim/pin/source/tools/InstLib -I/home/lorabit/mcsim/pin/source/tools/../../extras/xed/include -I/home/lorabit/mcsim/pin/source/tools/../../extras/components/include -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin -I/home/lorabit/mcsim/pin/source/tools/../../source/include/pin/gen -DTARGET_IA32E -DHOST_IA32E -fPIC -DTARGET_LINUX -O3 -g -I/usr/local/include -o obj_opt/mypthreadtool.o mypthreadtool.cc
+make[1]: Leaving directory `/home/lorabit/mcsim/Pthread'

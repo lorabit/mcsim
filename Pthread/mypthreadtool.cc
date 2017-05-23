@@ -693,7 +693,8 @@ VOID FlagTrace(TRACE trace, VOID* v)
     {
       for (INS ins = BBL_InsHead(bbl); INS_Valid(ins); ins = INS_Next(ins)) 
       {
-        if (INS_IsCall(ins) && !INS_IsDirectBranchOrCall(ins))            // indirect call
+//	cout << OPCODE_StringShort(INS_Opcode(ins)) << endl;
+	if (INS_IsCall(ins) && !INS_IsDirectBranchOrCall(ins))            // indirect call
         {
           INS_InsertCall(ins, IPOINT_BEFORE, (AFUNPTR)ProcessCall,
               IARG_BRANCH_TARGET_ADDR,
