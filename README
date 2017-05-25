@@ -33,7 +33,9 @@ How to compile
  - McSimA+ needs snappy compression library from Google.
   = http://code.google.com/p/snappy/
   = please install and setup proper environmental variables such as
-    export LD_LIBRARY_PATH=/usr/local/lib:
+    export LD_LIBRARY_PATH="/home/lorabit/mcsim/pin/intel64/runtime:/home/lorabit/mcsim/pin/intel64/lib-ext:/usr/lib/x86_64-linux-gnu/"
+    export PIN="/home/lorabit/mcsim/pin/intel64/bin/pinbin"
+    export PINTOOL="/home/lorabit/mcsim/Pthread/mypthreadtool"
 4. Compile Pthread
  - cd /home/scale/Pthread
  - make TOOLS_DIR=/home/scale/pin/source/tools -j 8
