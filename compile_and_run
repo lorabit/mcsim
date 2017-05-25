@@ -1,4 +1,7 @@
 #!/bin/bash
+export LD_LIBRARY_PATH="/home/lorabit/mcsim/pin/intel64/runtime:/home/lorabit/mcsim/pin/intel64/lib-ext:/usr/lib/x86_64-linux-gnu/"
+export PIN="/home/lorabit/mcsim/pin/intel64/bin/pinbin"
+export PINTOOL="/home/lorabit/mcsim/Pthread/mypthreadtool"
 sudo bash -c "echo 0 > /proc/sys/kernel/yama/ptrace_scope"
 cd ~/mcsim
 cd McSim 
@@ -7,4 +10,4 @@ make INCS=-I/home/lorabit/mcsim/pin/extras/xed2/include -j 8 >> compiles.log
 cd ../Pthread
 make TOOLS_DIR=/home/lorabit/mcsim/pin/source/tools -j 8 >>compiles.log
 cd ..
-McSim/mcsim -mdfile ./Apps/md/md-o3-closed.py -runfile ./Apps/list/run-test.py
+McSim/mcsim -mdfile ./Apps/md/md-o3-closed.py -runfile ./Apps/list/remote.py
