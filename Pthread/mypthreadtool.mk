@@ -23,10 +23,10 @@ PIN_LDFLAGS    = $(DBG)
 TARGET_LONG=intel64
 PIN_KIT ?= ../../..
 
-XEDKIT        = $(PIN_KIT)/extras/xed2017
+XEDKIT        = $(PIN_KIT)/extras/xed2
 #XEDKIT        = $(PIN_KIT)/extras/xed2-$(TARGET_LONG)
-PIN_LPATHS   += -L$(XEDKIT)/obj -L$(PIN_KIT)/$(TARGET_LONG)/lib -L$(PIN_KIT)/$(TARGET_LONG)/lib-ext
-PIN_CXXFLAGS += -I$(XEDKIT)/obj -I$(XEDIT)/include/public/xed/ -I$(PIN_KIT)/extras/components/include \
+PIN_LPATHS   += -L$(XEDKIT)/lib -L$(PIN_KIT)/$(TARGET_LONG)/lib -L$(PIN_KIT)/$(TARGET_LONG)/lib-ext
+PIN_CXXFLAGS += -I$(XEDKIT)/include  -I$(PIN_KIT)/extras/components/include \
                 -I$(PIN_KIT)/source/include/pin -I$(PIN_KIT)/source/include/pin/gen
 VSCRIPT_DIR = $(PIN_KIT)/source/include/pin
 

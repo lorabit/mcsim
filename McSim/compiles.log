@@ -215,3 +215,176 @@ make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
 make[1]: Entering directory `/home/lorabit/mcsim/McSim'
 cp -f obj_opt/mcsim mcsim
 make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+mkdir obj_opt
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSCache.o PTSCache.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSComponent.o PTSComponent.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSCore.o PTSCore.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSO3Core.o PTSO3Core.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSDirectory.o PTSDirectory.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSRBoL.o PTSRBoL.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSMemoryController.o PTSMemoryController.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSTLB.o PTSTLB.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSXbar.o PTSXbar.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/McSim.o McSim.cc
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include -o obj_opt/McSim.o McSim.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include -o obj_opt/PTS.o PTS.cc
+g++ -DTARGET_IA32E -Wno-unknown-pragmas  -O3 -g  -o obj_opt/mcsim obj_opt/PTSCache.o obj_opt/PTSComponent.o obj_opt/PTSCore.o obj_opt/PTSO3Core.o obj_opt/PTSDirectory.o obj_opt/PTSRBoL.o obj_opt/PTSMemoryController.o obj_opt/PTSTLB.o obj_opt/PTSXbar.o obj_opt/McSim.o obj_opt/PTS.o main.cc
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+mkdir obj_opt
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSCache.o PTSCache.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSComponent.o PTSComponent.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSCore.o PTSCore.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSO3Core.o PTSO3Core.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSDirectory.o PTSDirectory.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSRBoL.o PTSRBoL.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSMemoryController.o PTSMemoryController.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSTLB.o PTSTLB.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTSXbar.o PTSXbar.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/McSim.o McSim.cc
+g++ -DTARGET_IA32E -c -Wno-unknown-pragmas  -O3 -g   -I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -o obj_opt/PTS.o PTS.cc
+g++ -DTARGET_IA32E -Wno-unknown-pragmas  -O3 -g  -o obj_opt/mcsim obj_opt/PTSCache.o obj_opt/PTSComponent.o obj_opt/PTSCore.o obj_opt/PTSO3Core.o obj_opt/PTSDirectory.o obj_opt/PTSRBoL.o obj_opt/PTSMemoryController.o obj_opt/PTSTLB.o obj_opt/PTSXbar.o obj_opt/McSim.o obj_opt/PTS.o main.cc
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'
+make[1]: Entering directory `/home/lorabit/mcsim/McSim'
+cp -f obj_opt/mcsim mcsim
+make[1]: Leaving directory `/home/lorabit/mcsim/McSim'

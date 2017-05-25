@@ -1,1 +1,1 @@
-24 40000 /home/lorabit/mcsim/McSim/remote APP
+1 0 /home/lorabit/mcsim/McSim/remote APP

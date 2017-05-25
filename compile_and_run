@@ -1,8 +1,9 @@
 #!/bin/bash
 cd ~/mcsim
 cd McSim 
-make INCS=-I/home/lorabit/mcsim/pin/extras/xed/obj INCS+=-I/home/lorabit/mcsim/pin/extras/xed/include/public/xed/ -j 8 >> compiles.log
+#make INCS=-I/home/lorabit/mcsim/pin/extras/xed2017/include/xed -j 8 >> compiles.log
+make INCS=-I/home/lorabit/mcsim/pin/extras/xed2/include -j 8 >> compiles.log
 cd ../Pthread
 make TOOLS_DIR=/home/lorabit/mcsim/pin/source/tools -j 8 >>compiles.log
 cd ..
-McSim/mcsim -mdfile ./Apps/md/md-o3-closed.py -runfile ./Apps/list/remote.py
+McSim/mcsim -mdfile ./Apps/md/md-o3-closed.py -runfile ./Apps/list/run-test.py
