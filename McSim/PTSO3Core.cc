@@ -721,7 +721,7 @@ void O3Core::add_rep_event(
     cachel1d->add_req_event(event_time + lsu_to_l1d_t, local_event); 
     if(local_event->type == et_write){
       LocalQueueElement * clwb_lqe = new LocalQueueElement();
-      clwb_lqe = * local_event;
+      *clwb_lqe = *local_event;
       clwb_lqe->type = et_m_to_e;
       cachel1d->add_req_event(event_time + lsu_to_l1d_t, local_event); 
     }
