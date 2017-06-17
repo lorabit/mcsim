@@ -346,7 +346,7 @@ uint32_t Hthread::process_event(uint64_t curr_time)
         mcsim->update_os_page_req_dist(addr);
 
 
-        if(lqe.type == et_write)
+        if(lqe->type == et_write)
         {
           lqe = new LocalQueueElement();
           lqe->th_id = num;
