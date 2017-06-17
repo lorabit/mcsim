@@ -347,6 +347,7 @@ uint32_t CacheL1::process_event(uint64_t curr_time)
           break;
 
         case et_m_to_s:
+        case et_m_to_e:
         case et_m_to_m:
           num_coherency_access++;
           if (set_iter == NULL || set_iter->second != cs_modified)
@@ -364,6 +365,10 @@ uint32_t CacheL1::process_event(uint64_t curr_time)
             {
               num_ev_coherency++;
               set_iter->second = cs_invalid;
+            }
+            else if (etype == et_m_to_e){
+              set_iter->second = cs_exclusive;
+              cout << "hahaha";
             }
             else
             {
