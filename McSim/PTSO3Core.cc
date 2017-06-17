@@ -718,6 +718,9 @@ void O3Core::add_rep_event(
     while (local_event->from.empty() == false) local_event->from.pop();
     local_event->from.push(this);
     local_event->type = (o3rob[local_event->rob_entry].isread == true) ? et_read : et_write;
+    if(local_event->type == et_write){
+      cout << "\nnow . we are ok!\n";
+    }
     cachel1d->add_req_event(event_time + lsu_to_l1d_t, local_event); 
   }
   else if (local_event->type == et_nack)
