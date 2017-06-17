@@ -1171,7 +1171,7 @@ uint32_t CacheL2::process_event(uint64_t curr_time)
         //tags[set].push_back(*set_iter);
         //tags[set].erase(set_iter);
       }
-      else if (idx != num_ways && (set_iter->type_l1l2 == cs_tr_to_e  || set_iter->type_l1l2 == cs_exclusive)){
+      else if (idx != num_ways && (set_iter->type_l1l2 == cs_tr_to_e  || set_iter->type_l1l2 == cs_exclusive || set_iter->type_l1l2 == cs_modified)){
         cout << "step 2 \n";
         num_ev_coherency++;
         set_iter->last_access_time = curr_time;
