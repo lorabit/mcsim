@@ -368,7 +368,7 @@ uint32_t CacheL1::process_event(uint64_t curr_time)
             }
             else if (etype == et_m_to_e){
               set_iter->second = cs_exclusive;
-              cout << "hahaha";
+              cout << "hahaha\n";
             }
             else
             {
@@ -1123,7 +1123,7 @@ uint32_t CacheL2::process_event(uint64_t curr_time)
         num_bypass++;
       }
     }
-    else if (etype == et_m_to_s || etype == et_m_to_m)
+    else if (etype == et_m_to_s || etype == et_m_to_m || etype == et_m_to_e)
     {
       rep_lqe->from.pop();
       num_coherency_access++;
@@ -1169,6 +1169,28 @@ uint32_t CacheL2::process_event(uint64_t curr_time)
         tags[set][num_ways-1] = set_iter;
         //tags[set].push_back(*set_iter);
         //tags[set].erase(set_iter);
+      }
+      else if (idx != num_ways && (set_iter->type_l1l2 == cs_tr_to_e )){
+        num_ev_coherency++;
+        set_iter->last_access_time = curr_time;
+        set_iter->type_l1l2 = (set_iter->type_l1l2 == cs_tr_to_s) ? cs_shared : 
+          (set_iter->pending == NULL) ? cs_modified : cs_invalid;
+        set_iter->sharedl1.insert(rep_lqe->from.top());
+        set_iter->type_l1l2 = cs_exclusive;
+        rep_lqe->type = (set_iter->pending == NULL) ? et_nop : et_nack;
+        rep_lqe->from.top()->add_rep_event(curr_time + l2_to_l1_t, rep_lqe);
+        if (set_iter->pending != NULL)
+        {
+          add_event_to_LL(curr_time, set_iter->pending, true, true);
+          set_iter->pending = NULL;
+          set_iter->type    = cs_shared;
+        }
+        for (uint32_t i = idx; i < num_ways-1; i++)
+        {
+          tags[set][i] = tags[set][i+1];
+        }
+        tags[set][num_ways-1] = set_iter;
+        cout << "nimasi!!!\n";
       }
       else if (idx != num_ways && (set_iter->type_l1l2 == cs_tr_to_m || set_iter->type_l1l2 == cs_tr_to_s))
       {
