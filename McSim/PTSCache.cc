@@ -1180,7 +1180,8 @@ uint32_t CacheL2::process_event(uint64_t curr_time)
         set_iter->sharedl1.insert(rep_lqe->from.top());
         set_iter->type_l1l2 = cs_exclusive;
         rep_lqe->type = (set_iter->pending == NULL) ? et_nop : et_nack;
-        rep_lqe->from.top()->add_rep_event(curr_time + l2_to_l1_t, rep_lqe);
+        if(rep_lqe->type == et_nack)
+          rep_lqe->from.top()->add_rep_event(curr_time + l2_to_l1_t, rep_lqe);
         if (set_iter->pending != NULL)
         {
           add_event_to_LL(curr_time, set_iter->pending, true, true);
