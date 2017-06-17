@@ -542,6 +542,9 @@ uint32_t O3Core::process_event(uint64_t curr_time)
           {
             lqe->type = (o3rob_entry.isread == true) ? et_read : et_write;
             cachel1d->add_req_event(curr_time + lsu_to_l1d_t, lqe); 
+            if(lqe->type == et_write){
+              cout << "look at here!!!\n";
+            }
           }
           else
           {
