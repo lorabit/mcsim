@@ -348,6 +348,7 @@ uint32_t Hthread::process_event(uint64_t curr_time)
 
         if(lqe->type == et_write)
         {
+          cout << "shibushi zheli ?\n";
           lqe = new LocalQueueElement();
           lqe->th_id = num;
           lqe->from.push(this);
