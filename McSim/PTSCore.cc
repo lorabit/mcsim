@@ -310,7 +310,15 @@ uint32_t Hthread::process_event(uint64_t curr_time)
       }
       return num_hthreads;
       break;
-
+    case ins_clwb:
+      lqe = new LocalQueueElement();
+      lqe->th_id = num;
+      lqe->from.push(this);
+      lqe->address = addr;
+      lqe->type = et_m_to_e;
+      tlbl1i->add_req_event(curr_time + to_l1i_t, lqe);
+      resume_time = (uint64_t)-1;
+      break;
     default:
       lqe = new LocalQueueElement();
       lqe->th_id = num;
@@ -336,6 +344,18 @@ uint32_t Hthread::process_event(uint64_t curr_time)
           cachel1d->add_req_event(curr_time + lsu_to_l1d_t, lqe);
         }
         mcsim->update_os_page_req_dist(addr);
+
+
+        if(lqe.type == et_write)
+        {
+          lqe = new LocalQueueElement();
+          lqe->th_id = num;
+          lqe->from.push(this);
+          lqe->address = addr;
+          lqe->type = et_m_to_e;
+          tlbl1i->add_req_event(curr_time + to_l1i_t, lqe);
+        }
+
         resume_time = (uint64_t)-1;
       }
       return num_hthreads;
