@@ -462,7 +462,7 @@ int main(int argc, char * argv[])
         assert(num_instrs > 0);
         for (uint32_t i = 0; i < num_instrs; i++)
         {
-	cout << ".";
+	// cout << ".";
           PTSInstr * ptsinstr = &(pts_m->val.instr[i]);
           num_available_slot = pts->mcsim->add_instruction(
             old_mapping_inv[curr_p->tid_to_htid + ptsinstr->hthreadid_],
