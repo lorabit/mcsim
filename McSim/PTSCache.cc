@@ -448,6 +448,7 @@ uint32_t CacheL1::process_event(uint64_t curr_time)
         case et_e_to_s:
         case et_s_to_s:
         default:
+          cout << "451 Status: " << etype << "\n";
           show_state(address); rep_lqe->display(); geq->display(); ASSERTX(0);
           break;
       }
